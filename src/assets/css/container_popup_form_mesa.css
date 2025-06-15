@@ -3,8 +3,15 @@
     width: 100%;
     height: 100%;
     background: #0000007e;
-    z-index: 98;
+    z-index: 97;
 
+    .container_popup_form_mesa__fundo {
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        z-index: 98;
+    }
+    
     .container_popup_form_mesa__content {
         background: #fff;
         position: fixed;
@@ -14,6 +21,20 @@
         padding: 20px;
         border-radius: 5px;
         width: 700px;
+        z-index: 99;
+        min-height: 300px;
+
+        .content__close {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            cursor: pointer;
+            transition: opacity .3s;
+        }
+
+        .content__close:hover {
+            opacity: .8;
+        }
 
         .content__title {
             text-align: center;
@@ -30,6 +51,7 @@
                 .container_dynamic__content {
                     display: flex;
                     flex-direction: column;
+
 
                     .container_input_pedido {
                         display: flex;

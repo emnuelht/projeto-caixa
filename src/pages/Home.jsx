@@ -15,6 +15,7 @@ function Home() {
     const [popupAlert, setPopupAlert] = useState(false);
     const [popupAlertSuccess, setPopupAlertSuccess] = useState(null);
     const [loading, setLoading] = useState(false);
+    const [popupForm, setPopupForm] = useState(true);
     const refContainerMesas = useRef(null);
 
     useEffect(() => {
@@ -51,7 +52,7 @@ function Home() {
 
     return (
         <section className="home">
-            {true && <PopupFormMesa title={"Mesa 1"} />}
+            {popupForm && <PopupFormMesa title={"Mesa 1"} iHandleClosePopup={() => setPopupForm(false)} />}
             {loading && <Loading />}
             {popupAlert && <PopupAlert iSuccess={popupAlertSuccess} />}
             {popupAddMesa && <PopupAddMesa iHandleClickFundo={() => setPopupAddMesa(false)} iHandleSubmit={iHandleSubmitPopupAddMesa} />}
