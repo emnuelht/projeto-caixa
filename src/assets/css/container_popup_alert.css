@@ -1,0 +1,27 @@
+.container_popup_alert {
+    padding: 10px;
+    display: flex;
+    gap: 20px;
+    color: #fff;
+    transition: all .5s;
+    animation: showIn .3s linear;
+    
+    .container_popup_alert__msg {
+        display: flex;
+        flex-direction: column;
+        
+        .msg__text_error {
+            font-size: 13px;
+        }
+    }
+}
+
+.container_popup_alert.success {
+    background: #00af09;
+}
+
+.container_popup_alert.error {
+    background: #db3a09;
+}
+
+

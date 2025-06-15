@@ -1,0 +1,26 @@
+.container_mesa {
+    width: 150px;
+    height: 70px;
+    background: #f86b29;
+    padding: 10px;
+    border-radius: 5px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15pt;
+    cursor: pointer;
+    transition: opacity .3s;
+    font-weight: 600;
+
+    .container_mesa__icon {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        width: 17px;
+    }
+}
+
+.container_mesa:hover {
+    opacity: .8;
+}

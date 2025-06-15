@@ -1,0 +1,15 @@
+* {
+    font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+@keyframes showIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 100%;
+    }
+}
+

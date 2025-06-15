@@ -1,0 +1,51 @@
+.popup_add_mesa {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #00000065;
+    z-index: 97;
+    transition: all .5s;
+    animation: showIn .3s linear;
+
+    .popup_add_mesa_fnd {
+        width: 100%;
+        height: 100%;
+        z-index: 98;
+    }
+
+    .obg {
+        color: #ff0000;
+        font-weight: bold;
+    }
+
+    .popup_add_mesa__content {
+        background: #fff;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+        border-radius: 5px;
+        gap: 20px;
+        width: 400px;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 99;
+        
+        .content__form {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+
+            .form__input_label {
+                display: flex;
+                flex-direction: column;
+                gap: 2px;
+            }
+        }
+    }
+}

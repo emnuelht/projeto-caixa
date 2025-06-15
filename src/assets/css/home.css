@@ -1,0 +1,6 @@
+.home {
+    .home__container_mesas {
+        display: flex;
+        gap: 10px;
+    }
+}

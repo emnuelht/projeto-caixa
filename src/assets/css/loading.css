@@ -1,0 +1,31 @@
+.loading {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    z-index: 97;
+    
+    .bolinha {
+        width: 30px;
+        height: 30px;
+        border: 4px solid #cecece;
+        border-top: 4px solid #ff4e19;
+        border-radius: 100%;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        animation: loading .7s linear infinite;
+    }
+}
+
+@keyframes loading {
+    0% {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+    100% {
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+}
